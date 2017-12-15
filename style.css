@@ -1,0 +1,947 @@
+/* Global Styles */
+
+@font-face {
+	font-family: Gunny Manual;
+	src: url('fonts/gunnynormal.ttf');
+}
+
+@keyframes slider {
+
+0% {
+	left: 0;
+}
+
+20% {
+	left: 0;
+}
+
+25% {
+	left: -100%;
+}
+
+45% {
+	left: -100%;
+}
+
+50% {
+	left: -200%;
+}
+
+70% {
+	left: -200%;
+}
+
+75% {
+	left: -300%;
+}
+
+95% {
+	left: -300%;
+}
+
+100% {
+	left: -400%;
+}
+
+}
+
+#slider {
+	overflow: hidden;
+
+}
+
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slider infinite;
+}
+
+
+body{
+	font-family: ;
+	font-size: 100%;
+	color: ;
+	background-color: #f7f5f0;
+	height: 4000px;
+}
+
+#container{
+	
+}
+
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+header{
+	
+}
+
+.logowit {
+	/*max-width: 100%;
+	height: auto;*/
+	width: 240px; 
+	height: 75px;
+	margin-top: 50px;
+	margin-left: 5%;
+}
+
+header .logowit:hover {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+#navigation {
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 10000;
+}
+
+nav {
+	float: right;
+	margin-right: 0;
+	margin-top: -65px;
+	margin-left: 375px;
+}
+
+
+li a {
+	color: white;
+	text-decoration: none;
+	font-family: Gunny Manual, arial;
+	font-size: 1.875rem;
+}
+
+nav li {
+	text-align: center;
+	float: left;
+	margin-left: 125px;
+	list-style: none;
+}
+
+nav li:hover {
+  color: white;
+  transform: scale(1.8);
+}
+
+#shop {
+	background-color: #ccc;
+}
+
+h1 {
+	font-family: Gunny Manual, arial;
+    font-size: 150px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top:200px;
+    left: 100px;
+}
+.subline {
+	font-family: Gunny Manual, arial;
+    font-size: 60px;
+    font-style: italic;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top:380px;
+    left: 100px;
+}
+
+h2 {
+	font-family: Gunny Manual, arial;
+	font-size: 75px;
+	text-align: center;
+	color: black;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.textWithBlurredBg{
+    width:300px;
+    height:200px;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin:3.3%;
+  }
+  
+.textWithBlurredBg img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+.textWithBlurredBg:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px black;
+}
+
+.textWithBlurredBg :not(img){
+    position:absolute;
+    z-index:1;
+    top:40%;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+    font-family: Gunny Manual, arial;
+    font-size: 30px;
+}
+  
+.textWithBlurredBg h3{
+    top:9%;
+    font-family: Gunny Manual, arial;
+    font-size: 45px;
+}
+  
+.textWithBlurredBg:hover :not(img){
+    opacity:1;
+}
+
+#new {
+	top:0px;
+}
+
+.newPic {
+	/*width:300px;
+    height:200px;*/
+	width: 40%;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin-left: 110px;
+
+}
+
+.newPic img{
+	height: auto;
+	border-radius: 8px;
+	box-shadow:0 0 16px black;
+}
+
+h6 {
+	font-family: Gunny Manual, arial;
+	font-size: 50px;
+	top:0;
+	margin: 0;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.new1 {
+	font-family: Gunny Manual, arial;
+	font-size: 25px;
+	text-align: center;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.gallerij{
+	text-align: center;
+	font-family: Gunny Manual, arial;
+	font-size: 25px;
+}
+
+.galleria{ 
+	max-width: 1200px; 
+	height: 600px; 
+	background-color: #f7f5f0;
+	margin:0 auto;
+}
+
+.video {
+	text-align: center;
+	font-family: Gunny Manual, arial;
+	font-size: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.vince {
+	text-align: center;
+	font-family: Gunny Manual, arial;
+	font-size: 75px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.left-col {
+	top: 0;
+	position: relative;
+	width: 350px;
+	text-align: center;
+	font-family: Gunny Manual, arial;
+}
+
+.profile-image {
+
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+  border: 3px solid white;
+  transition: all .5s;
+  margin: auto;
+  display: inline-block;
+  margin-bottom: 50px;
+  font-weight: bold;
+  box-shadow:0 0 16px black;
+}
+
+.profile-image:hover {
+  transform: scale(1.2) rotate(2deg);
+}
+
+#portfolio {
+
+}
+
+#left-colid {
+	/*width:300px;
+    height:200px;*/
+	width: 24%;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin-left: 110px;	
+}
+
+#right-colid {
+	/*width:300px;
+    height:200px;*/
+	width: 24%;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin-left: 110px;	
+    /*top: 32px;*/
+}
+
+#middle {
+	/*width:300px;
+    height:200px;*/
+	/*width: 24%;*/
+    height:auto;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin-left: 110px;
+}
+
+footer {
+	margin-top: 3rem;
+	background-color: black;
+  	min-height: 30px;
+  	padding: 20px 0 40px 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  height: auto;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #7d1c16;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ccc;
+}
+
+label {
+	color: white;
+}
+
+#contact {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+}
+
+#contacts {
+	color: white;
+}
+
+#contactpg {
+	background-color: black;
+}
+
+.socials {
+	text-align: center;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 10px;	
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+
+}
+
+a.twitter {
+  background-image: url(img/twitter.svg);
+  background-repeat: no-repeat;
+}
+
+a.instagram {
+  background-image: url(img/instagram.svg);
+  background-repeat: no-repeat;
+}
+
+a.facebook {
+  background-image: url(img/facebook.svg);
+  background-repeat: no-repeat;
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+a.pijl {
+	background-image: url(img/pijl.svg);
+	z-index: 100000;
+	position: fixed;
+	width: 4rem;
+	height: 4rem;
+	top: 50rem;
+	left: 95rem;
+	border-radius: 0.7rem;
+	text-decoration: none;
+	padding: 0.5rem;
+	text-align: center;
+	font-family: Gunny Manual, arial;
+	font-size: 1.6rem;
+	background-color: #7d1c16;
+	color: white;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.copyright {
+	text-align: center;
+	margin-bottom: 20px;
+	color: white;
+}
+
+/* 1680px   =   mijn pc     version */
+
+/* Ipad Pro (Laptop) version  (1024px) */
+
+@media only screen and (max-width: 1024px) {
+			body{
+				margin:0px;
+				padding:0px;
+				font-family:"Helvetica Neue", Helvetica, Arial;
+			}
+
+			#sidebar{
+				background:#151718;
+				width:265px;
+				height:100%;
+				display:block;
+				position:absolute;
+				left:-265px;
+				top:0px;
+				transition:left 0.3s linear;
+			}
+
+			#sidebar.visible{
+				left:0px;
+				transition:left 0.3s linear;
+			}
+
+			ul{
+				margin:0px;
+				padding:0px;
+			}
+
+			ul li{
+				list-style:none;
+			}
+
+			ul li a{
+				background:#1C1E1F;
+				color:white;
+				border-bottom:2px solid #111;
+				display:block;
+				width:250px;
+				padding:10px;
+				text-decoration: none;
+				margin-left: -130px;
+			}
+
+			#sidebar-btn{
+				display:inline-block;
+				vertical-align: middle;
+				width:20px;
+				height:15px;
+				cursor:pointer;
+				margin:20px;
+				position:absolute;
+				top:0px;
+				right:-60px;
+			}
+
+			#sidebar-btn span{
+				height:2px;
+				background:white;
+				margin-bottom:5px;
+				display:block;
+			}
+
+			nav li:hover {
+  				color: white;
+  				transform: none;
+			}
+
+		    .logowit {
+		    	max-width: 50%;
+		    	height: auto;
+		    	margin-top: 7%;
+		    	margin-left: 120%;
+		    }
+
+		    h1 {
+		    	font-size: 7em;
+		    	top: 7rem;
+				left: 2rem;
+		    }
+
+		    .subline {
+		    	font-size: 3em;
+		    	top: 15rem;
+				left: 2rem;
+		    }
+
+		    .textWithBlurredBg {
+		    	width: 18rem;
+		    	height: auto;
+		    	left: 8rem;
+		    	margin-left: 3rem;
+		    }
+
+		    .newPic{
+		    	width: 88%;
+		    }
+
+		    #new{
+		    	margin-left: -5rem;
+		    	width: 68rem;
+		    }
+
+		    .new1{
+		    	margin-bottom: 2.5rem;
+		    }
+
+		    #portfolio{
+				margin-left: 4rem;
+				max-width: 100%;
+		    }
+
+		    .vince{
+		    	font-size: 75px;
+		    	margin-left: 0rem;
+		    }
+
+		    .profile-image{
+		    	display: block;
+		    	max-width: 50rem;
+		    	width: 40rem;
+		    }
+
+		    .card{
+				width: 35.5rem;
+				margin-bottom: 2.5rem;
+		    }
+
+		    .left-col{
+		    	width: 35.5rem;
+		    	margin-left: 2.5rem;
+		    }
+
+		    .middle{
+		    	width: 0%;
+		    }
+
+		    a.pijl {
+			z-index: 100000;
+			position: fixed;
+			width: 4%;
+			height: 2.5%;
+			top: 90%;
+			left: 87%;
+			border-radius: 0.2rem;
+			text-decoration: none;
+			padding: 0.5rem;
+			text-align: center;
+			font-family: Gunny Manual, arial;
+			font-size: 1rem;
+			background-color: #7d1c16;
+			color: white;
+			}
+}
+
+/* Tablet version  (768px) */
+
+@media only screen and (max-width: 768px) {
+			body{
+				margin:0px;
+				padding:0px;
+				font-family:"Helvetica Neue", Helvetica, Arial;
+			}
+
+			#sidebar{
+				background:#151718;
+				width:265px;
+				height:100%;
+				display:block;
+				position:absolute;
+				left:-265px;
+				top:0px;
+				transition:left 0.3s linear;
+			}
+
+			#sidebar.visible{
+				left:0px;
+				transition:left 0.3s linear;
+			}
+
+			ul{
+				margin:0px;
+				padding:0px;
+			}
+
+			ul li{
+				list-style:none;
+			}
+
+			ul li a{
+				background:#1C1E1F;
+				color:white;
+				border-bottom:2px solid #111;
+				display:block;
+				width:250px;
+				padding:10px;
+				text-decoration: none;
+
+				margin-left: -130px;
+			}
+
+			#sidebar-btn{
+				display:inline-block;
+				vertical-align: middle;
+				width:20px;
+				height:15px;
+				cursor:pointer;
+				margin:20px;
+				position:absolute;
+				top:0px;
+				right:-60px;
+			}
+
+			#sidebar-btn span{
+				height:1px;
+				background:white;
+				margin-bottom:5px;
+				display:block;
+			}
+
+			nav li:hover {
+  				color: white;
+  				transform: none;
+			}
+
+		    .logowit {
+		    	max-width: 25%;
+		    	height: auto;
+		    	margin-top: 5%;
+		    	margin-left: 90%;
+		    }
+
+		    h1 {
+		    	font-size: 5em;
+		    	top: 7rem;
+				left: 2rem;
+		    }
+
+		    .subline {
+		    	font-size: 2em;
+		    	top: 13rem;
+				left: 2rem;
+		    }
+
+		    .textWithBlurredBg {
+		    	left: 1.5rem;
+		    }
+
+		    .newPic{
+		    	width: 88%;
+		    }
+
+		    #new{
+		    	margin-left: -5rem;
+		    	width: 50rem;
+		    }
+
+		    .new1{
+		    	margin-bottom: 2.5rem;
+		    }
+
+		    #portfolio{
+				margin-left: -3rem;
+				max-width: 100%;
+		    }
+
+		    .vince{
+		    	font-size: 75px;
+		    	margin-left: 5rem;
+		    }
+
+		    .profile-image{
+		    	display: block;
+		    	max-width: 50rem;
+		    	width: 40rem;
+		    }
+
+		    .card{
+				width: 35.5rem;
+				margin-bottom: 2.5rem;
+		    }
+
+		    .left-col{
+		    	width: 35.5rem;
+		    	margin-left: 2.5rem;
+		    }
+
+		    .middle{
+		    	width: 0%;
+		    }
+			
+			a.pijl {
+			z-index: 100000;
+			position: fixed;
+			width: 4%;
+			height: 2%;
+			top: 90%;
+			left: 87%;
+			border-radius: 0.2rem;
+			text-decoration: none;
+			padding: 0.5rem;
+			text-align: center;
+			font-family: Gunny Manual, arial;
+			font-size: 0.6rem;
+			background-color: #7d1c16;
+			color: white;
+			}
+
+}
+
+/* Iphone 6 version  (375px) */
+
+@media only screen and (max-width: 375px) {
+			body{
+				margin:0px;
+				padding:0px;
+				font-family:"Helvetica Neue", Helvetica, Arial;
+			}
+
+			#sidebar{
+				background:#151718;
+				width:265px;
+				height:100%;
+				display:block;
+				position:absolute;
+				left:-265px;
+				top:0px;
+				transition:left 0.3s linear;
+			}
+
+			#sidebar.visible{
+				left:0px;
+				transition:left 0.3s linear;
+			}
+
+			ul{
+				margin:0px;
+				padding:0px;
+			}
+
+			ul li{
+				list-style:none;
+			}
+
+			ul li a{
+				background:#1C1E1F;
+				color:white;
+				border-bottom:2px solid #111;
+				display:block;
+				width:250px;
+				padding:10px;
+				text-decoration: none;
+
+				margin-left: -130px;
+			}
+
+			#sidebar-btn{
+				display:inline-block;
+				vertical-align: middle;
+				width:20px;
+				height:15px;
+				cursor:pointer;
+				margin:20px;
+				position:absolute;
+				top:0px;
+				right:-60px;
+			}
+
+			#sidebar-btn span{
+				height:1px;
+				background:white;
+				margin-bottom:5px;
+				display:block;
+			}
+
+			nav li:hover {
+  				color: white;
+  				transform: none;
+			}
+
+		    .logowit {
+		    	max-width: 25%;
+		    	height: auto;
+		    	margin-top: 5%;
+		    	margin-left: 65%;
+		    }
+
+		    h1 {
+		    	font-size: 2em;
+		    	top: 4rem;
+				left: 2rem;
+		    }
+
+		    .subline {
+		    	font-size: 1em;
+		    	top: 6.2rem;
+				left: 2rem;
+		    }
+
+		    .textWithBlurredBg {
+		    	left: -0.5rem;
+		    }
+
+		    #new{
+		    	margin-left: -5rem;
+		    	width: 23rem;
+		    }
+
+		    .new1{
+		    	margin-bottom: 2.5rem;
+		    }
+
+		    .vince{
+		    	font-size: 60px;
+		    	margin-left: 5rem;		    }
+
+		    #portfolio{
+				margin-left: -5.3rem;
+		    }
+
+		    .profile-image{
+		    	display: block;
+		    	max-width: 30rem;
+		    	width:20rem;
+		    }
+
+		    .card{
+				width: 15rem;
+				margin-bottom: 2.5rem;
+		    }
+
+		    .left-col{
+		    	width: 15rem;
+		    	margin-left: 2.5rem;
+		    }
+
+		    .middle{
+		    	width: 0%;
+		    }
+
+		    a.pijl {
+			z-index: 100000;
+			position: fixed;
+			width: 4%;
+			height: 4%;
+			top: 90%;
+			left: 85%;
+			border-radius: 0.2rem;
+			text-decoration: none;
+			padding: 0.5rem;
+			text-align: center;
+			font-family: Gunny Manual, arial;
+			font-size: 0.5rem;
+			background-color: #7d1c16;
+			color: white;
+			}
+}
+
+
+
+
+
+
+
+
+
+
+
+
